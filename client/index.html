@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Sidebar / Index rail -->
+  <nav class="rail">
+    <div class="rail-logo">YN</div>
+    <ul class="rail-links">
+      <li><a href="#work" data-label="Work">01</a></li>
+      <li><a href="#about" data-label="About">02</a></li>
+      <li><a href="#skills" data-label="Skills">03</a></li>
+      <li><a href="#contact" data-label="Contact">04</a></li>
+    </ul>
+    <a class="rail-resume" href="#" target="_blank">Resume ↗</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <header class="hero">
+      <p class="hero-eyebrow">Full-Stack Developer — Building on the MERN Stack</p>
+      <h1 class="hero-title">
+        I build <span class="hero-accent">products</span><br/>
+        end-to-end —<br/>
+        interface to database.
+      </h1>
+      <p class="hero-sub">
+        Hello, I'm <strong>Your Name</strong>. I design and ship web apps that connect
+        a clean frontend, a reliable backend, and a real database — then put them
+        on the internet for people to use.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="hero-meta">
+        <div><span class="meta-num">01</span><span>Frontend</span></div>
+        <div><span class="meta-num">02</span><span>Backend</span></div>
+        <div><span class="meta-num">03</span><span>Database</span></div>
+        <div><span class="meta-num">04</span><span>Deploy</span></div>
+      </div>
+    </header>
+
+    <!-- WORK / PROJECTS -->
+    <section id="work" class="section">
+      <div class="section-head">
+        <span class="section-tag">01 — Selected Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div id="projects-grid" class="projects-grid">
+        <!-- Projects injected by app.js, fallback static cards below -->
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-alt">
+      <div class="section-head">
+        <span class="section-tag">02 — Profile</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a developer who enjoys taking an idea from a blank file to a live URL.
+          I focus on writing clean, readable code, structuring APIs that make sense,
+          and designing interfaces that feel considered rather than default.
+          This site itself is a full-stack build: a static frontend, an Express API,
+          and a MongoDB database storing every project listed above.
+        </p>
+        <div class="about-stack">
+          <h3>Toolbox</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript, React</li>
+            <li>Node.js, Express.js</li>
+            <li>MongoDB, Mongoose</li>
+            <li>Git &amp; GitHub</li>
+            <li>Netlify / Vercel / Render</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <span class="section-tag">03 — Capabilities</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div id="skills-grid" class="skills-grid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="section-head">
+        <span class="section-tag">04 — Say Hello</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by Your Name — © 2026</p>
+    <div class="footer-links">
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Email</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
